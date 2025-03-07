@@ -25,7 +25,6 @@ export default function BrowsingHistoryList({
           hideDetails
           type='history'
         />
-        
       </div>
     )
   )
