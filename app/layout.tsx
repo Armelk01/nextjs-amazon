@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 import { Metadata } from "next";
+import ClientProviders from "@/components/shared/client-providers";
 export const metadata: Metadata = {
   title: {
     template: `%s | ${APP_NAME}`,
@@ -31,7 +32,7 @@ export default function RootLayout({
       <body
         className={`min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+          <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );
