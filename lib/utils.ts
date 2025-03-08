@@ -37,3 +37,5 @@ export const toSlug = (text: string): string =>
     
     export const generateId = () =>
       Array.from({ length: 24 }, () => Math.floor(Math.random() * 10)).join('')
+
+    
