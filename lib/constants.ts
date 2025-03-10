@@ -23,12 +23,12 @@ export const APP_DESCRIPTION =
     {
       name: 'Stripe',
       commission: 0,
-      isDefault: true,
+      isDefault: false,
     },
     {
       name: 'Cash On Delivery',
       commission: 0,
-      isDefault: true,
+      isDefault: false,
     },
   ]
   export const DEFAULT_PAYMENT_METHOD =
