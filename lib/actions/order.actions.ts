@@ -34,6 +34,12 @@ const shippingPrice =
 
 const taxPrice = !shippingAddress ? undefined : round2(itemsPrice * 0.15)
 
+const totalPrice = round2 (
+  itemsPrice +
+  (shippingPrice? round2(shippingPrice) : 0)+
+(taxPrice? round2(taxPrice) : 0)
+)
+
 
 return {
   AVAILABLE_DELIVERY_DATES,
@@ -44,5 +50,6 @@ return {
   itemsPrice,
   shippingPrice,
   taxPrice,
+  totalPrice
   }
 }
