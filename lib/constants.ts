@@ -59,3 +59,5 @@ export const APP_DESCRIPTION =
       freeShippingMinPrice: 35,
     },
   ]
+
+  export const USER_ROLES = ['Admin', 'User']
