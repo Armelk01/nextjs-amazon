@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 
 import { Metadata } from "next";
 import ClientProviders from "@/components/shared/client-providers";
+import { Toaster } from "sonner";
 export const metadata: Metadata = {
   title: {
     template: `%s | ${APP_NAME}`,
@@ -33,6 +34,8 @@ export default function RootLayout({
         className={`min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
           <ClientProviders>{children}</ClientProviders>
+          <Toaster richColors /> {/* Ajoutez cette ligne */}
+          
       </body>
     </html>
   );
