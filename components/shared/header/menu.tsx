@@ -11,7 +11,7 @@ import UserButton from './user-button'
 import ThemeSwitcher from './theme-switcher'
 import CartButton from './cart-button'
 
-export default function  Menu () {
+export default function  Menu ({ forAdmin = false }: { forAdmin?: boolean }) {
  
   return (
     <div className='flex justify-end'>
@@ -19,7 +19,7 @@ export default function  Menu () {
         
         <ThemeSwitcher />
         <UserButton />
-        <CartButton />
+        {forAdmin ? null : <CartButton />}
       </nav>
       <nav className='md:hidden'>
         <Sheet>
